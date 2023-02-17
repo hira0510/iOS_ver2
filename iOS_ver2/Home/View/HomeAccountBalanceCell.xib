@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeAccountBalanceCell" id="gTV-IL-0wX" customClass="HomeAccountBalanceCell" customModule="iOS_ver2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imw-82-ktJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-KV-CxC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQC-Hb-zlx">
+                                        <rect key="frame" x="24" y="12" width="180" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="fqg-Ec-bCk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iC-Z2-7OQ">
+                                        <rect key="frame" x="208" y="8" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3iC-Z2-7OQ" secondAttribute="height" multiplier="1:1" id="xhQ-gJ-GxJ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Basic_icon_eye_on"/>
+                                        <state key="selected" image="Basic_icon_eye_off"/>
+                                        <connections>
+                                            <action selector="didClickEyeBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fhB-aS-iJJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yVG-KV-CxC" secondAttribute="height" multiplier="125:16" id="CuX-6Z-e4Y"/>
+                                    <constraint firstItem="GQC-Hb-zlx" firstAttribute="centerY" secondItem="yVG-KV-CxC" secondAttribute="centerY" id="T4V-Ax-hFz"/>
+                                    <constraint firstItem="GQC-Hb-zlx" firstAttribute="leading" secondItem="yVG-KV-CxC" secondAttribute="leading" constant="24" id="TjS-cF-hUN"/>
+                                    <constraint firstItem="3iC-Z2-7OQ" firstAttribute="centerY" secondItem="GQC-Hb-zlx" secondAttribute="centerY" id="bKW-NX-kUA"/>
+                                    <constraint firstItem="3iC-Z2-7OQ" firstAttribute="leading" secondItem="GQC-Hb-zlx" secondAttribute="trailing" constant="4" id="ngV-YY-pUq"/>
+                                    <constraint firstItem="3iC-Z2-7OQ" firstAttribute="width" secondItem="yVG-KV-CxC" secondAttribute="width" multiplier="32:375" id="yjF-tz-Gfm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-B2-slx">
+                                <rect key="frame" x="0.0" y="48" width="375" height="136"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rve-oT-7pp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dxZ-y5-Tto">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rve-oT-7pp" firstAttribute="leading" secondItem="dZ9-B2-slx" secondAttribute="leading" id="Liv-rc-Qtm"/>
+                                    <constraint firstAttribute="trailing" secondItem="rve-oT-7pp" secondAttribute="trailing" id="TEB-yg-ISD"/>
+                                    <constraint firstItem="rve-oT-7pp" firstAttribute="top" secondItem="dZ9-B2-slx" secondAttribute="top" id="ro3-tm-0fX"/>
+                                    <constraint firstAttribute="bottom" secondItem="rve-oT-7pp" secondAttribute="bottom" id="wFy-Iz-Hyg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dZ9-B2-slx" firstAttribute="top" secondItem="yVG-KV-CxC" secondAttribute="bottom" id="0gL-Ah-omP"/>
+                            <constraint firstAttribute="bottom" secondItem="dZ9-B2-slx" secondAttribute="bottom" id="Ljv-Db-FCG"/>
+                            <constraint firstItem="dZ9-B2-slx" firstAttribute="leading" secondItem="imw-82-ktJ" secondAttribute="leading" id="U2f-wB-1FX"/>
+                            <constraint firstItem="yVG-KV-CxC" firstAttribute="top" secondItem="imw-82-ktJ" secondAttribute="top" id="dtN-59-zyh"/>
+                            <constraint firstAttribute="trailing" secondItem="yVG-KV-CxC" secondAttribute="trailing" id="ga5-Mf-3hs"/>
+                            <constraint firstAttribute="trailing" secondItem="dZ9-B2-slx" secondAttribute="trailing" id="hN9-y8-vk3"/>
+                            <constraint firstItem="yVG-KV-CxC" firstAttribute="leading" secondItem="imw-82-ktJ" secondAttribute="leading" id="pNE-1A-noW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="imw-82-ktJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="342-CH-b8A"/>
+                <constraint firstAttribute="trailing" secondItem="imw-82-ktJ" secondAttribute="trailing" id="6ey-i1-dlb"/>
+                <constraint firstAttribute="bottom" secondItem="imw-82-ktJ" secondAttribute="bottom" id="HMc-Vt-Cdi"/>
+                <constraint firstItem="imw-82-ktJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S5f-O8-PUr"/>
+            </constraints>
+            <connections>
+                <outlet property="eyeButton" destination="3iC-Z2-7OQ" id="9Cq-XW-arz"/>
+                <outlet property="mCollectionView" destination="rve-oT-7pp" id="Apl-5W-nOg"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="-11.694152923538232"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Basic_icon_eye_off" width="24" height="24"/>
+        <image name="Basic_icon_eye_on" width="24" height="24"/>
+    </resources>
+</document>

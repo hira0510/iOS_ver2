@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vPr-C2-QHw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account-->
+        <scene sceneID="zuf-aJ-AIj">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="vPr-C2-QHw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" image="Tabbar_icon_account" selectedImage="Tabbar_icon_account" id="1Th-zD-s8e"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcS-Sg-mrH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AxA-2o-2iQ" kind="relationship" relationship="rootViewController" id="dJf-gZ-LbB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3AI-dV-Jji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="-44"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5CU-0U-6Qz">
+            <objects>
+                <viewController id="AxA-2o-2iQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5u-Lc-e1x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-Ap-xMe">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4fs-9Y-caU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iVK-Ap-xMe" firstAttribute="leading" secondItem="4fs-9Y-caU" secondAttribute="leading" id="FYQ-Qu-XvP"/>
+                            <constraint firstItem="4fs-9Y-caU" firstAttribute="bottom" secondItem="iVK-Ap-xMe" secondAttribute="bottom" id="PMb-ke-5c6"/>
+                            <constraint firstItem="4fs-9Y-caU" firstAttribute="trailing" secondItem="iVK-Ap-xMe" secondAttribute="trailing" id="U1F-8h-OTm"/>
+                            <constraint firstItem="iVK-Ap-xMe" firstAttribute="top" secondItem="4fs-9Y-caU" secondAttribute="top" id="Zjb-mA-smx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQG-Wy-d07"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypJ-KD-pXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tabbar_icon_account" width="25" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

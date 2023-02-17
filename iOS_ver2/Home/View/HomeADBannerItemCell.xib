@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeADBannerItemCell" id="gTV-IL-0wX" customClass="HomeADBannerItemCell" customModule="iOS_ver2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvq-U7-5Qq">
+                        <rect key="frame" x="142.5" y="33.5" width="42" height="21"/>
+                        <color key="backgroundColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fvq-U7-5Qq" secondAttribute="height" multiplier="2:1" id="VAv-XI-BZG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWM-85-DPn">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TWM-85-DPn" secondAttribute="bottom" id="0bK-Lj-JOI"/>
+                <constraint firstItem="TWM-85-DPn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3uQ-F2-imQ"/>
+                <constraint firstItem="fvq-U7-5Qq" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="A8V-Yz-lGQ"/>
+                <constraint firstItem="fvq-U7-5Qq" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="CNP-ZR-2dF"/>
+                <constraint firstItem="TWM-85-DPn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GqY-Fa-MTe"/>
+                <constraint firstItem="fvq-U7-5Qq" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="48:375" id="TtL-F2-rJK"/>
+                <constraint firstAttribute="trailing" secondItem="TWM-85-DPn" secondAttribute="trailing" id="ekV-ZS-aYg"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="itemImageView" destination="TWM-85-DPn" id="uQn-PR-I3J"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="-11"/>
+        </collectionViewCell>
+    </objects>
+</document>
